@@ -1,10 +1,11 @@
-var enderecoContrato = "0xB47A720427117Ed98A937c5c0989D48492509cdd";
+var enderecoContrato = "contract.getContractBalance()";
 var provedor = new ethers.providers.Web3Provider(web3.currentProvider);
 var signer = provider.getSigner();
 var contract = new ethers.Contract(contractAddress, contractAbi, signer);
 
 function RelatarHoras() 
 {
+    var nomePrestador==document.getElementById("nomePrestador");
     var mesTrabalhado= document.getElementById("mesTrabalhado");
     var anoTrabalhado= document.getElementById("anoTrabalhado");
     var diaDoMesTrabalhado= document.getElementById("diaDoMesTrabalhado");
@@ -14,5 +15,7 @@ function RelatarHoras()
 
 function gerarRelatorio()
 {
-    var apuracaoDoMes = document.getElementById("apuracaoDoMes");
+    var apuracaoDoMes=document.getElementById("apuracaoDoMes");
+    contract.getContractBalance()
+
 }
