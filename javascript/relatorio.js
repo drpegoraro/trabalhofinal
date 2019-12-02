@@ -11,7 +11,7 @@ function RelatarHoras()
     var diaDoMesTrabalhado= document.getElementById("diaDoMesTrabalhado");
     var descricaoTrabalho= document.getElementById("descricaoTrabalho");
     var totalDeHorasTrabalhadas= document.getElementById("totalDeHorasTrabalhadas");
-    .then ( (relatoHoras) =>
+    then ( (relatoHoras) =>
     {
         console.log("getRelatarHoras, relatoHoras");
     })
@@ -25,7 +25,7 @@ function RelatarHoras()
 function gerarRelatorio()
 {
     var apuracaoDoMes=document.getElementById("apuracaoDoMes");
-    .then ( (apuraMes) =>
+    then ( (apuraMes) =>
     {
         console.log("getgerarRelatorio, apuraMes");
     })
