@@ -1,7 +1,7 @@
 var enderecoContrato="0x4e75B68Ff5434844b34AC39De37Cbc325D9A22f0";
 var provedor= new ethers.providers.Web3Provider(web3.currentProvider);
 ethereum.enable();
-var signer= provider.getSigner();
+var signer= provedor.getSigner();
 var contract= new ethers.Contract(enderecoContrato, contractAbi, signer);
 
 function relatarHoras() 
