@@ -17,7 +17,11 @@ function relatarHoras()
     {
         console.log("getRelatarHoras, relatoHoras");
         nomePrestador.innerHTML=relatoHoras;
-        
+        mesTrabalhado.innerHTML=relatoHoras;
+        anoTrabalhado.innerHTML=relatoHoras;
+        diaDoMesTrabalhado.innerHTML=relatoHoras;
+        descricaoTrabalho.innerHTML=relatoHoras;
+        totalDeHorasTrabalhadas.innerHTML=relatoHoras;
     })
     .catch ((err) =>
     {
