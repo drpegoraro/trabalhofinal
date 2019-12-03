@@ -15,7 +15,7 @@ function relatarHoras()
     contract.relatarHoras()
     .then ( (relatoHoras) =>
     {
-        console.log("getRelatarHoras, relatoHoras");
+        console.log("getrelatarHoras", relatoHoras);
         nomePrestador.innerHTML=relatoHoras;
         mesTrabalhado.innerHTML=relatoHoras;
         anoTrabalhado.innerHTML=relatoHoras;
