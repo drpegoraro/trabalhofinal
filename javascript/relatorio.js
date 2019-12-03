@@ -1,10 +1,10 @@
-var enderecoContrato ="0x692a70D2e424a56D2C6C27aA97D1a86395877b3A";
+var enderecoContrato ="0x66aa9611898D08b1Efe1f413791421B25b05C26a";
 var provedor = new ethers.providers.Web3Provider(web3.currentProvider);
-ethereum.enable
+ethereum.enable();
 var signer = provider.getSigner();
 var contract = new ethers.Contract(enderecoContrato, contractAbi, signer);
 
-function RelatarHoras() 
+function relatarHoras() 
 {
     var nomePrestador=document.getElementById("nomePrestador");
     var mesTrabalhado= document.getElementById("mesTrabalhado");
@@ -12,7 +12,8 @@ function RelatarHoras()
     var diaDoMesTrabalhado= document.getElementById("diaDoMesTrabalhado");
     var descricaoTrabalho= document.getElementById("descricaoTrabalho");
     var totalDeHorasTrabalhadas= document.getElementById("totalDeHorasTrabalhadas");
-    then ( (relatoHoras) =>
+    contract.relatarHoras()
+    .then ( (relatoHoras) =>
     {
         console.log("getRelatarHoras, relatoHoras");
     })
@@ -26,7 +27,8 @@ function RelatarHoras()
 function gerarRelatorio()
 {
     var apuracaoDoMes=document.getElementById("apuracaoDoMes");
-    then ( (apuraMes) =>
+    contract.gerarRelatorio()
+    .then ( (apuraMes) =>
     {
         console.log("getgerarRelatorio, apuraMes");
     })
