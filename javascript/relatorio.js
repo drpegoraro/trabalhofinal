@@ -16,6 +16,8 @@ function relatarHoras()
     .then ( (relatoHoras) =>
     {
         console.log("getRelatarHoras, relatoHoras");
+        nomePrestador.innerHTML=relatoHoras;
+        
     })
     .catch ((err) =>
     {
