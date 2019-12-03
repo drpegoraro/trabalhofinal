@@ -36,7 +36,7 @@ function gerarRelatorio()
     contract.gerarRelatorio()
     .then ( (apuraMes) =>
     {
-        console.log("getgerarRelatorio, apuraMes");
+        console.log("getgerarRelatorio", apuraMes);
     })
     .catch ((err) =>
     {
