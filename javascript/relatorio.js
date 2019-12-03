@@ -37,11 +37,11 @@ function gerarRelatorio()
     .then ( (apuraMes) =>
     {
         console.log("getgerarRelatorio", apuraMes);
+        apuracaoDoMes.innerHTML=apuraMes;
     })
     .catch ((err) =>
     {
         console.error(err);
-        apuraMes = "Erro ao apurar o mês"
+        apuraMes= "Erro ao apurar o mês"
     })
-
 }
