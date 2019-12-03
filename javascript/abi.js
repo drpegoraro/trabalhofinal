@@ -1,4 +1,4 @@
-[
+var contractAbi = [
 	{
 		"inputs": [
 			{
@@ -135,4 +135,4 @@
 		"stateMutability": "view",
 		"type": "function"
 	}
-]
+];
